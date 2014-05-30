@@ -1,0 +1,80 @@
+﻿<%@ Master %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form runat="server">
+        <div id="master">
+            <div id="top">
+                <div id="top-right">
+                    <div id="top-left">
+                        <div style="height: 10px;">
+                        </div>
+                        <div id="right">
+                            <div id="left">
+                                <div id="bottom">
+                                    <div id="bottom-right">
+                                        <div id="bottom-left">
+                                            <table id="header" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td id="hdr"></td>
+                                                    <td id="body">
+                                                        <div id="title">
+                                                        </div>
+                                                        <div id="logo-fading">
+                                                        </div>
+                                                        <div id="logo">
+                                                        </div>
+                                                    </td>
+                                                    <td id="hdl"></td>
+                                                </tr>
+                                            </table>
+                                            <table id="menu-bar" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td id="menu-left"></td>
+                                                    <td id="menu">
+                                                        <p style="float: right;">
+                                                            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource1"
+                                                                RenderingMode="List">
+                                                            </asp:Menu>
+                                                        </p>
+                                                        <div id="login-status">
+                                                            <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="ورود" LogoutText="خروج"
+                                                                ToolTip="ورود/خروج" LoginImageUrl="~/App_Themes/Default/images/loginbutton.png"
+                                                                LogoutImageUrl="~/App_Themes/Default/images/logoutbutton.png" Font-Bold="true"
+                                                                Font-Underline="false" ForeColor="#d0d0d0" Font-Size="15px" LogoutAction="Refresh"
+                                                                LogoutPageUrl="~/Default.aspx" />
+                                                        </div>
+                                                    </td>
+                                                    <td id="menu-right"></td>
+                                                </tr>
+                                            </table>
+                                            <div id="wrapper">
+                                                <asp:ContentPlaceHolder ID="cph" runat="server" />
+                                                <div class="clear">
+                                                </div>
+                                                <div id="footer">
+                                                    <ul>
+                                                        <li><a runat="server" href="Default.aspx">صفحه نخست</a> </li>
+                                                        <li><a runat="server" href="ContactUs.aspx">تماس با ما</a> </li>
+                                                        <li><a runat="server" href="About.aspx">درباره ما</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" ShowStartingNode="false" runat="server"
+            SiteMapProvider="PortalSiteMapProvider" />
+    </form>
+</body>
+</html>

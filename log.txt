@@ -1,0 +1,22 @@
+﻿Log Date : 1392/7/9 6:46
+Exception Type : System.FormatException
+ Message : Input string was not in a correct format. 
+ Source : mscorlib 
+ InnerException :  
+ StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at BMI_Loan.btnConfirm_Click(Object sender, EventArgs e) in g:\Visual Studio 2012\WebSites\EstahbanBank\BMI\Loan.aspx.cs:line 56 
+ TargetSite : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+--------------------------------------------
+Log Date : 1392/7/9 6:47
+Exception Type : System.FormatException
+ Message : Input string was not in a correct format. 
+ Source : mscorlib 
+ InnerException :  
+ StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at BMI_Loan.btnConfirm_Click(Object sender, EventArgs e) in g:\Visual Studio 2012\WebSites\EstahbanBank\BMI\Loan.aspx.cs:line 56 
+ TargetSite : Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)
+--------------------------------------------

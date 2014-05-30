@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="" description="" roles="*">
+
+    <siteMapNode title="صفحه نخست" url="~/Default.aspx"></siteMapNode>
+
+    <siteMapNode title="مدیریت" roles="Admin" >
+      <!--<siteMapNode title="ویرایش شعار سایت"  url="~/Admin/EditSlogan.aspx" roles="Admin"></siteMapNode>
+      <siteMapNode title="ویرایش پنل"  url="~/Admin/EditPanel.aspx" roles="Admin"></siteMapNode>-->
+      <siteMapNode title="بخشنامه ها"  url="~/Admin/Letters.aspx" roles="Admin"></siteMapNode>
+      <siteMapNode title="ویرایش متن متحرک"  url="~/Admin/TickerItems.aspx" roles="Admin"></siteMapNode>
+      <siteMapNode title="ویرایش لیست وام ها"  url="~/Admin/EditList.aspx" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن بانکداری اینترنتی"  url="~/Admin/EditText.aspx?m=1" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن تلفن بانک"  url="~/Admin/EditText.aspx?m=2" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن سامانه پیام کوتاه"  url="~/Admin/EditText.aspx?m=3" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن شرایط وام ازدواج"  url="~/Admin/EditText.aspx?m=4" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن آمار و عملکرد"  url="~/Admin/EditText.aspx?m=15" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن تاريخچه"  url="~/Admin/EditText.aspx?m=5" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن اساسنامه"  url="~/Admin/EditText.aspx?m=6" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن ساختار سازماني"  url="~/Admin/EditText.aspx?m=7" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن منشور اخلاقي"  url="~/Admin/EditText.aspx?m=8" roles="Admin"></siteMapNode>
+      <siteMapNode title="متن هیات مدیره"  url="~/Admin/EditText.aspx?m=9" roles="Admin"></siteMapNode>
+      <siteMapNode title="گالری عکس ها"  url="~/Admin/SliderText.aspx" roles="Admin"></siteMapNode>
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

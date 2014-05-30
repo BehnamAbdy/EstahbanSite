@@ -1,0 +1,75 @@
+#ticker-wrapper * {
+	MARGIN: 0px
+}
+.has-js#ticker-wrapper {
+	HEIGHT: 28px; COLOR: #b62934; DIRECTION: rtl; FONT: 11px/26px tahoma; WIDTH: 652px
+}
+#ticker {
+	OVERFLOW: hidden; HEIGHT: 28px; BACKGROUND: url(/client/themes/fa/main/img/bg_tele.gif) repeat-x; POSITION: relative; FLOAT: right; DISPLAY: block; WIDTH: 600px
+}
+#ticker-title {
+	HEIGHT: 28px; BACKGROUND: url(/client/themes/fa/main/img/bolet_teletype.gif) no-repeat 5px 9px; FLOAT: right; DISPLAY: block; PADDING-RIGHT: 0px; WIDTH: 9px
+}
+#ticker-content {
+	BACKGROUND: url(/client/themes/fa/main/img/bg_nav.gif) repeat-x; POSITION: absolute; FLOAT: right; MARGIN: 0px
+}
+#ticker-content:focus {
+	
+}
+#ticker-content A {
+	COLOR: #436dd9; FONT: 11px/24px tahoma; TEXT-DECORATION: none
+}
+#ticker-content A:hover {
+	COLOR: #0d3059; TEXT-DECORATION: underline
+}
+#ticker-swipe {
+	HEIGHT: 26px; BACKGROUND: url(/client/themes/fa/main/img/bg_nav.gif) repeat-x; RIGHT: 80px; POSITION: absolute; DISPLAY: block; TOP: 0px; WIDTH: 600px
+}
+#ticker-swipe SPAN {
+	HEIGHT: 22px; BORDER-BOTTOM: #1f527b 1px solid; DISPLAY: block; WIDTH: 7px; BACKGROUND-COLOR: #ffffff; MARGIN-RIGHT: 1px
+}
+#ticker-controls {
+	LIST-STYLE-TYPE: none; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 10px
+}
+#ticker-controls LI {
+	CURSOR: pointer; HEIGHT: 16px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN-LEFT: 5px; DISPLAY: block; PADDING-RIGHT: 0px; WIDTH: 16px
+}
+#ticker-controls LI#play-pause {
+	BACKGROUND-IMAGE: url(/client/themes/fa/main/img/controls.png); BACKGROUND-POSITION: 32px 16px
+}
+#ticker-controls LI.over#play-pause {
+	BACKGROUND-POSITION: 32px 32px
+}
+#ticker-controls LI.down#play-pause {
+	BACKGROUND-POSITION: 32px 0px
+}
+#ticker-controls LI.paused#play-pause {
+	BACKGROUND-IMAGE: url(/client/themes/fa/main/img/controls.png); BACKGROUND-POSITION: 48px 16px
+}
+#ticker-controls LI.over.paused#play-pause {
+	BACKGROUND-POSITION: 48px 32px
+}
+#ticker-controls LI.down.paused#play-pause {
+	BACKGROUND-POSITION: 48px 0px
+}
+#ticker-controls LI#prev {
+	BACKGROUND-IMAGE: url(/client/themes/fa/main/img/controls.png); BACKGROUND-POSITION: 0px 16px
+}
+#ticker-controls LI.over#prev {
+	BACKGROUND-POSITION: 0px 32px
+}
+#ticker-controls LI.down#prev {
+	BACKGROUND-POSITION: 0px 0px
+}
+#ticker-controls LI#next {
+	BACKGROUND-IMAGE: url(/client/themes/fa/main/img/controls.png); BACKGROUND-POSITION: 16px 16px
+}
+#ticker-controls LI.over#next {
+	BACKGROUND-POSITION: 16px 32px
+}
+#ticker-controls LI.down#next {
+	BACKGROUND-POSITION: 16px 0px
+}
+.js-hidden {
+	DISPLAY: none
+}

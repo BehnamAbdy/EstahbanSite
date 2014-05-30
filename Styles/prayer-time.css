@@ -1,0 +1,39 @@
+.ptime_c {
+    margin: 7px 6px 0;
+    text-align: center;
+    width: 200px;
+    border: 1px solid #CCCCCC;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.ptime_row {
+    border-bottom: 1px solid #CCCCCC;
+    height: 23px;
+}
+
+.ptime_title {
+    font: 11px tahoma;
+    text-align: center;
+    line-height: 25px;
+    background: #CCCCCC;
+    color: #000;
+    vertical-align: middle;
+}
+
+.ptime_col1 {
+    width: 35%;
+    float: right;
+    padding: 5px;
+    border-left: 1px solid #CCCCCC;
+    font: 11px tahoma;
+}
+
+.ptime_col2 {
+    width: 50%;
+    float: right;
+    padding: 5px;
+    text-align: center;
+    font: 11px tahoma;
+}

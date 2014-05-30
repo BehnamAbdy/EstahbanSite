@@ -1,0 +1,138 @@
+﻿<%@ Master %>
+
+<%@ Register Src="UC/List.ascx" TagName="List" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" ng-app="siteApp">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta name="description" content="صندوق قرض الحسنه مهدیه استهبان">
+    <meta name="keywords" content="تلفن بانک,اینترنت بانک,وام دانشجویی,وام درمان,وام ازدواج,وام قرض الحسنه,وام,قرض الحسنه,صندوق,استهبان">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div id="master">
+            <div id="top">
+                <div id="top-right">
+                    <div id="top-left">
+                        <div style="height: 10px;">
+                        </div>
+                        <div id="right">
+                            <div id="left">
+                                <div id="bottom">
+                                    <div id="bottom-right">
+                                        <div id="bottom-left">
+                                            <table id="header" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td id="hdr"></td>
+                                                    <td id="body">
+                                                        <div id="title">
+                                                        </div>
+                                                        <div id="logo-fading">
+                                                        </div>
+                                                        <div id="logo">
+                                                        </div>
+                                                    </td>
+                                                    <td id="hdl"></td>
+                                                </tr>
+                                            </table>
+                                            <table id="menu-bar" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td id="menu-left"></td>
+                                                    <td id="menu">
+                                                        <p style="float: right;">
+                                                            &nbsp;<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource1"
+                                                                RenderingMode="List">
+                                                            </asp:Menu>
+                                                        </p>
+                                                        <div id="login-status">
+                                                            <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="ورود" LogoutText="خروج"
+                                                                ToolTip="ورود/خروج" LoginImageUrl="~/App_Themes/Default/images/loginbutton.png"
+                                                                LogoutImageUrl="~/App_Themes/Default/images/logoutbutton.png" Font-Bold="true"
+                                                                Font-Underline="false" ForeColor="#d0d0d0" Font-Size="15px" LogoutAction="Refresh"
+                                                                LogoutPageUrl="~/Default.aspx" />
+                                                        </div>
+                                                    </td>
+                                                    <td id="menu-right"></td>
+                                                </tr>
+                                            </table>
+                                            <div id="wrapper">
+                                                <div id="side-bar">
+
+                                                    <div id="ebank">
+                                                        <br />
+                                                        <ul>
+                                                            <li>
+                                                                <a id="A4" runat="server" href="Account/Balance.aspx">
+                                                                    <img id="Img1" runat="server" src="App_Themes/Default/images/balance.gif" />
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a id="A5" runat="server" href="Account/Transactions.aspx">
+                                                                    <img id="Img2" runat="server" src="App_Themes/Default/images/transactions.gif" />
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a id="A6" runat="server" href="Account/TransCash.aspx">
+                                                                    <img id="Img3" runat="server" src="App_Themes/Default/images/transfer.gif" />
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a id="A7" runat="server" href="Account/Loan.aspx">
+                                                                    <img id="Img4" runat="server" src="App_Themes/Default/images/installment.gif" />
+                                                                </a>
+
+                                                            </li>
+                                                            <li>
+                                                                <a id="A8" runat="server" href="Account/LoanRecords.aspx">
+                                                                    <img id="Img5" runat="server" src="App_Themes/Default/images/loan.gif" />
+                                                                </a>
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <uc1:List ID="List1" runat="server" />
+                                                    <div id="open-hours">
+                                                        <h4>ساعات کاری صندوق</h4>
+                                                        <div class="hours">
+                                                            صبج 7:30 تا 13
+                                                        <br />
+                                                            عصر 16 تا 18
+                                                        <br />
+                                                            پنجشنبه 7:30 تا 12:30
+                                                        </div>
+                                                        <hr />
+                                                        <div id="phone" title="تلفن">
+                                                        </div>
+                                                        <div id="fax" title="فکس">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="page">
+                                                    <asp:ContentPlaceHolder ID="cph" runat="server" />
+                                                </div>
+                                                <div class="clear">
+                                                </div>
+                                                <div id="footer">
+                                                    <ul>
+                                                        <li><a id="A1" runat="server" href="Default.aspx">صفحه نخست</a> </li>
+                                                        <li><a id="A2" runat="server" href="ContactUs.aspx">تماس با ما</a> </li>
+                                                        <li><a id="A3" runat="server" href="About.aspx">درباره ما</a> </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" ShowStartingNode="false" runat="server"
+            SiteMapProvider="PortalSiteMapProvider" />
+    </form>
+</body>
+</html>
